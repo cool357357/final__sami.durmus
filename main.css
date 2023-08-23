@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color: #23252C;
+  font-family: 'Inter', sans-serif;
+}
+a{
+  all: unset;
+}
+
+.main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bcard{
+  width: 31.7rem;
+  margin: 1rem;
+}
+
+/* Header Styles */
+
+.bcard__profile-img{
+  width: 31.7rem;
+  height: 31.7rem;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  object-position: top right;
+}
+
+/* Body Styles */
+.bcard__body{
+  background-color: #1A1B21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+.bcard__heading-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem;
+}
+
+.bcard__heading-wrapper * + * {
+  margin-top: 0.5em;
+}
+
+.bcard__name {
+  color: gray;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.bcard__title{
+  color: #cd3333;
+  font-weight: 400;
+  font-size: 1.28rem;
+}
+
+.bcard__btn-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.bcard__btn{
+  min-width: 11.5rem;
+  height: 3.4rem;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05);
+}
+.bcard__btn-icon{
+  margin-right: 1rem;
+  font-size: 1.4rem;
+}
+
+.bcard__btn--email{
+  background: gray;
+  border: 1px solid #cd3333;
+  color: #cd3333;
+}
+
+.bcard__btn--linkedin{
+  background: gray;
+  border: 1px solid #cd3333;
+  color: #cd3333;
+}
+.bcard__text-wapper{
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+.bcard__text-wapper + * + {
+margin-top: 11em;
+}
+.bcard__heading{
+  color: gray;
+  font-size: 1.6rem;
+}
+.bcard__text{
+  color: #cd3333;
+  font-size: 1.08rem;
+}
+.bcard__footer{
+  height: 6.5rem;
+  background-color: #1A1B21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 10px 10px;
+}
+.bcard__footer-icon{
+  background-color: white;
+  font-size: 2.7rem;
+  padding: 0.2em;
+  background-color: #1A1B21;
+  margin-right: 2.4rem;
+  border-radius: 5pxs;
+  cursor: pointer;
+  color: #cd3333;
+}
+.bcard__footer-icon:last-of-type{
+  margin-right: 0;
+}
+@media (max-width:600px){
+.main{
+  height: auto;
+}
+}
+  
